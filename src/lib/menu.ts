@@ -1,0 +1,126 @@
+import type { Category, Product } from "./types";
+import { defaultSettings } from "./config";
+
+export const categories: Category[] = [
+  "All",
+  "Burgers",
+  "Meals",
+  "Sides",
+  "Drinks",
+  "Desserts",
+];
+export const menu: Product[] = [
+  {
+    id: "golden-classic",
+    name: "The Golden Classic",
+    description:
+      "Two juicy patties, melty cheddar, crisp lettuce & our signature sauce.",
+    category: "Burgers",
+    price: 22900,
+    image: "/images/classic.jpg",
+    vegetarian: false,
+    badge: "Bestseller",
+    calories: 540,
+    available: true,
+  },
+  {
+    id: "crispy-chicken",
+    name: "Crispy Chicken Club",
+    description:
+      "Golden-fried chicken, crunchy slaw & a little kick of chipotle mayo.",
+    category: "Burgers",
+    price: 19900,
+    image: "/images/chicken.jpg",
+    vegetarian: false,
+    badge: "Fan favourite",
+    calories: 480,
+    available: true,
+  },
+  {
+    id: "garden-burger",
+    name: "Garden Goodness",
+    description:
+      "A crisp veggie patty, fresh greens, tomato & creamy herb mayo.",
+    category: "Burgers",
+    price: 17900,
+    image: "/images/veggie.jpg",
+    vegetarian: true,
+    calories: 390,
+    available: true,
+  },
+  {
+    id: "golden-meal",
+    name: "Make It Golden Meal",
+    description: "Our classic burger, regular golden fries & an ice-cold cola.",
+    category: "Meals",
+    price: 34900,
+    image: "/images/meal.png",
+    vegetarian: false,
+    badge: "The whole deal",
+    calories: 870,
+    available: true,
+  },
+  {
+    id: "golden-fries",
+    name: "Golden Fries",
+    description:
+      "Crispy on the outside. Fluffy on the inside. Perfectly salted.",
+    category: "Sides",
+    price: 9900,
+    image: "/images/fries.jpg",
+    vegetarian: true,
+    calories: 280,
+    available: true,
+  },
+  {
+    id: "chicken-bites",
+    name: "Crispy Chicken Bites",
+    description: "Six juicy, golden chicken bites with a smoky dipping sauce.",
+    category: "Sides",
+    price: 15900,
+    image: "/images/bites.jpg",
+    vegetarian: false,
+    calories: 320,
+    available: true,
+  },
+  {
+    id: "cold-cola",
+    name: "Ice-Cold Cola",
+    description: "A refreshing 350 ml cola. A perfect partner for every bite.",
+    category: "Drinks",
+    price: 6900,
+    image: "/images/cola.jpg",
+    vegetarian: true,
+    calories: 140,
+    available: true,
+  },
+  {
+    id: "chocolate-shake",
+    name: "Chocolate Shake",
+    description: "Thick, creamy chocolate goodness, blended fresh for you.",
+    category: "Drinks",
+    price: 14900,
+    image: "/images/shake.jpg",
+    vegetarian: true,
+    calories: 310,
+    available: true,
+  },
+  {
+    id: "choco-cookie",
+    name: "Warm Choco Cookie",
+    description:
+      "Soft in the middle, crisp at the edges, loaded with chocolate.",
+    category: "Desserts",
+    price: 8900,
+    image: "/images/cookie.jpg",
+    vegetarian: true,
+    calories: 240,
+    available: true,
+  },
+];
+export const SERVICEABLE_POSTCODES = defaultSettings.serviceable_postcodes;
+export const STORE = {
+  name: "Golden Bite · Indiranagar",
+  address: "100 Feet Road, Indiranagar, Bengaluru",
+  hours: "11:00 AM – 11:00 PM",
+};
